@@ -23,7 +23,7 @@ case "$CMD" in
     echo "Built to dist/ — serve with any static file server"
     ;;
   export)
-    pnpm dlx $PACKAGES slidev export --output oac-guide.pdf
+    pnpm dlx $PACKAGES --package playwright-chromium slidev export --output oac-guide.pdf
     echo "Exported to oac-guide.pdf"
     ;;
   *)
